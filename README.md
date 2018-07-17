@@ -1,6 +1,6 @@
 ## [MOD] Lenovo Watch's notification apps substitution
 
-[Download](https://github.com/ERap320/LenovoWatchMOD/archive/master.zip)
+### [Download](https://github.com/ERap320/LenovoWatchMOD/archive/master.zip)
 
 Lenovo Watch is the application used to pair and set the Lenovo Watch 9.
 One of the main "smart" functions of the watch is to vibrate when you get a notifications in one of the selected apps. The problem is that 4 of the 8 possible apps are services only used in China, and Skype doesn't work.
