@@ -15,7 +15,7 @@ I fixed Skype and made these substitutions:
 
 ![Before and After](http://erap.space/kb/imgs/LenovoWatch.png)
 
-## Content of the repository and Download
+## Content of the repository
 The commits of this repository contain new versions of the modified .apk
 
 If you need an older version of the app take a look at older [Releases](https://github.com/ERap320/LenovoWatchMOD/releases). The tag of the commits will be the version of the Lenovo Watch app used as a base for the mod.
