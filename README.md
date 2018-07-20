@@ -1,4 +1,5 @@
 ## [MOD] Lenovo Watch's notification apps substitution
+[![BuyMeACoffee](https://img.shields.io/badge/coffee-donate-yellow.svg)](https://buymeacoff.ee/erap320)
 
 ### [Download](https://github.com/ERap320/LenovoWatchMOD/archive/master.zip)
 
