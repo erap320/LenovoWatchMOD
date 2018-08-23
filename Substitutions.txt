@@ -1,5 +1,12 @@
+> Package names
 com.tencent.mm -> org.telegram.messenger
 com.skype.rover&com.skype.android.access -> com.skype.raider
 com.sina.weibo -> com.google.android.calendar
 com.tencent.mobileqq -> com.microsoft.office.outlook
 jp.naver.line.android -> com.android.deskclock
+
+> Strings
+WeChat -> Telegram
+QQ -> Microsoft Outlook
+Weibo -> Google Calendar
+Line -> Clock
