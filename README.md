@@ -12,7 +12,7 @@ I fixed Skype, Facebook Messenger and made these substitutions:
 * WeChat -> Telegram
 * QQ -> Microsoft Outlook
 * Weibo -> Google Calendar
-* Line -> Clock
+* Line -> Gmail
 * Tencent Tim -> Telegram X
 
 ## Content of the repository

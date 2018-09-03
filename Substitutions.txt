@@ -11,7 +11,7 @@ com.facebook.katana&com.facebook.orca -> com.facebook.orca
 WeChat -> Telegram
 QQ -> Microsoft Outlook
 Weibo -> Google Calendar
-Line -> Clock
+Line -> Gmail
 Tencent Tim -> Telegram X
 Facebook -> Facebook Messenger
 
