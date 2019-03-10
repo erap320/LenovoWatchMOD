@@ -17,7 +17,7 @@ The objective of this mod is to give the watch a bit more functionality for non-
 * Line -> Gmail
 * Tencent Tim -> Telegram X
 
-- Fixed the accented chars to replace with the non accented pair in the message.  So the result will be ��������� -> aeiooouuu.
+- Fixed the accented chars to replace with the non accented pair in the message.  So the result will be áéíóöőúüű -> aeiooouuu.
 - Fixed gmail notification and display the subject correctly
 
 ## Content of the repository
