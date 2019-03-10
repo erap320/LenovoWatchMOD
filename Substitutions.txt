@@ -1,0 +1,18 @@
+> Package names
+com.tencent.mm -> org.telegram.messenger
+com.skype.rover&com.skype.android.access -> com.skype.raider
+com.sina.weibo -> com.google.android.calendar
+com.tencent.mobileqq -> com.microsoft.office.outlook
+jp.naver.line.android -> com.google.android.gm
+com.tencent.tim -> org.thunderdog.challegram
+com.facebook.katana&com.facebook.orca -> com.facebook.orca
+
+> Strings
+WeChat -> Telegram
+QQ -> Microsoft Outlook
+Weibo -> Google Calendar
+Line -> Gmail
+Tencent Tim -> Telegram X
+Facebook -> Facebook Messenger
+
+Smart Reminder -> Notifications
