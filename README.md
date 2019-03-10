@@ -8,6 +8,7 @@ There are serval issues with the notifications. One is the watch and the app can
 
 
 The objective of this mod is to fix this issue replacaing the accented chars to a non accented pair, as the watch can't handle the accented one..
+Fix Gmail subject is [NULL] notification on Lenovo Watch X and Lenovo Watch X plus
 
 ## Content of the repository
 The commits of this repository contain new versions of the modified .apk
@@ -16,3 +17,4 @@ If you need an older version of the app take a look at older [Releases](https://
 
 # Result
 αινσφυϊόϋ will be replaced to aeiooouuu.
+Gmail shows the subject 

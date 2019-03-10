@@ -939,53 +939,100 @@
     return-void
 .end method
 
+.method private static charSeqToString(Ljava/lang/CharSequence;)Ljava/lang/String;
+    .registers 2
+    .param p0, "charSequence"    # Ljava/lang/CharSequence;
+
+    .prologue
+    .line 139
+    if-nez p0, :cond_5
+
+    const-string v0, ""
+
+    :goto_4
+    return-object v0
+
+    :cond_5
+    invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_4
+.end method
+
+
+
+
+
 .method private doNotify(Landroid/service/notification/StatusBarNotification;)V
-    .locals 5
+    .locals 6
 
     const-string v0, ""
 
     .line 367
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v2, 0x13
+    const/16 v3, 0x13
 
-    if-lt v1, v2, :cond_0
+    if-lt v2, v3, :cond_0
 
     .line 368
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
-    move-result-object v0
-
-    iget-object v0, v0, Landroid/app/Notification;->extras:Landroid/os/Bundle;
-
-    const-string v1, "android.title"
-
-    .line 370
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
     move-result-object v1
 
-    const-string v2, "android.text"
+    iget-object v0, v1, Landroid/app/Notification;->extras:Landroid/os/Bundle;
+
+    const-string v3, "android.title"
+
+    .line 370
+    invoke-virtual {v0, v3}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/pmpd/business/device/notify/NotificationService;->charSeqToString(Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.text"
 
     .line 372
-    invoke-virtual {v0, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
 
-    move-result-object v0
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/pmpd/business/device/notify/NotificationService;->charSeqToString(Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v5
+
+    #invoke-direct {p0, v1, v5}, Lcom/pmpd/business/device/notify/NotificationService;->logMsg(Landroid/app/Notification;Ljava/lang/String;)V
+
+    #if-nez v5, :cond_29
+    #const-string v3, "android.textLines"
+
+    #invoke-virtual {v0, v3}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    #move-result-object v3
+
+    #invoke-interface {v3}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    #move-result-object v5
 
     .line 373
-    new-instance v2, Ljava/lang/StringBuilder;
+    #:cond_29
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ":"
+    const-string v2, ":"
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
