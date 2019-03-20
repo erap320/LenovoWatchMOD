@@ -2,11 +2,11 @@
 [![BuyMeACoffee](https://img.shields.io/badge/coffee-donate-yellow.svg)](https://buymeacoff.ee/erap320)
 
 ## [Download](https://github.com/ERap320/LenovoWatchMOD/archive/master.zip)
-Lenovo Watch is the application used to pair and set the Lenovo Watch 9, Lenovo Watch X and Lenovo Watch X Plus
+Lenovo Watch is the application used to pair and set the Lenovo Watch 9, Lenovo Watch X and Lenovo Watch X Plus.  
 One of the main "smart" functions of the watch is to vibrate when you get a notifications in one of the selected apps.
 - The problem is that 4 of the 8 possible apps are services only used in China, and Skype doesn't work.
 - The Watch X and Watch X Plus are not supported char with  accented and only show the messages until the first accented chars
-- The Watch X and Watch X Plus gmail notifcation subject value is [null]
+- The Watch X and Watch X Plus Gmail notification's subject value is [null]
 
 The objective of this mod is to give the watch a bit more functionality for non-chinese users.
 
@@ -18,7 +18,7 @@ The objective of this mod is to give the watch a bit more functionality for non-
 * Tencent Tim -> Telegram X
 
 - Fixed the accented chars to replace with the non accented pair in the message.  So the result will be áéíóöőúüű -> aeiooouuu.
-- Fixed gmail notification and display the subject correctly
+- Fixed Gmail notification and display the subject correctly
 
 ## Content of the repository
 The commits of this repository contain new versions of the modified .apk
