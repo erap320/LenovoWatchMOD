@@ -1,24 +1,26 @@
 # [MOD] Lenovo Watch's notification apps substitution
-[![BuyMeACoffee](https://img.shields.io/badge/coffee-donate-yellow.svg)](https://buymeacoff.ee/erap320)
+[![BuyMeACoffee](https://img.shields.io/badge/coffee-donate-yellow.svg?logo=buy-me-a-coffee)](https://buymeacoff.ee/erap320)
 
 ## [Download](https://github.com/ERap320/LenovoWatchMOD/archive/master.zip)
 Lenovo Watch is the application used to pair and set the Lenovo Watch 9, Lenovo Watch X and Lenovo Watch X Plus.  
 One of the main "smart" functions of the watch is to vibrate when you get a notifications in one of the selected apps.
-- The problem is that 4 of the 8 possible apps are services only used in China, and Skype doesn't work.
-- The Watch X and Watch X Plus are not supported char with  accented and only show the messages until the first accented chars
-- The Watch X and Watch X Plus Gmail notification's subject value is [null]
+There are several problems in Lenovo's original application:
+- 4 of the 8 possible apps are services only used in China, and Skype doesn't work.
+- The Watch X and Watch X Plus do not support accented chars, so they only show messages until the first accented char
+- On the Watch X and Watch X Plus, Gmail notifications' subject value is [null]
 
-The objective of this mod is to give the watch a bit more functionality for non-chinese users.
+The objective of this mod is to give the watch a bit more functionality for non-chinese users and solve other issues.
 
-- I fixed Skype, Facebook Messenger and made these substitutions:
+I fixed Skype, Facebook Messenger and made these substitutions:
 * WeChat -> Telegram
 * QQ -> Microsoft Outlook
 * Weibo -> Google Calendar
 * Line -> Gmail
 * Tencent Tim -> Telegram X
 
-- Fixed the accented chars to replace with the non accented pair in the message.  So the result will be áéíóöőúüű -> aeiooouuu.
-- Fixed Gmail notification and display the subject correctly
+For the Watch X and Watch X Plus:
+- Fixed the accented chars by replacing them with the non accented counterpart in the message (áéíóöőúüű -> aeiooouuu)
+- Fixed Gmail notification to display the subject correctly
 
 ## Content of the repository
 The commits of this repository contain new versions of the modified .apk
